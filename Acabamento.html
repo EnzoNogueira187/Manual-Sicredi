@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acabamento</title>
+  <link rel="stylesheet" href="CSS/Acabamento.css">
+</head>
+<body>
+  <div class="container">
+    <a href="!PagInicial.html">
+      <img src="https://logodownload.org/wp-content/uploads/2020/02/banestes-logo-1.png" alt="Logo BANESTES" class="img2">
+    </a>
+    <h1>Acabamento</h1>
+    <ul>
+      <li class="etapa" onclick="toggleDescricao(0)">
+        Talonamento
+        <div class="descricao">
+          O Talonamento segue o mesmo padrão adotado para os demais talões: Importante concluir as etapas de qualidade e de leitura da OS.
+        </div>
+      </li>
+      <li class="etapa" onclick="toggleDescricao(1)">
+        DWS
+        <div class="descricao">
+          Sistema de rastreamento e controle logístico dos documentos, permitindo monitoramento detalhado das etapas com as agências e modelos.
+        </div>
+      </li>
+      <li class="etapa" onclick="toggleDescricao(2)">
+        Triagem
+        <div class="descricao">
+          Classificação e organização dos documentos de acordo com seu destino e tipo, facilitando o processo de expedição (Agência, Modelo/Manter AR na ordem).
+        </div>
+      </li>
+      <li class="etapa" onclick="toggleDescricao(3)">
+        Auditagem
+        <div class="descricao">
+          Baixa OS Fim de Acabamento para solicitar nota e gerar etiqueta de entrega no sistema de SEDEX e sinaliza para a expedição.
+        </div>
+      </li>
+      <li class="etapa" onclick="toggleDescricao(4)">
+        Expedição
+        <div class="descricao">
+          Última etapa do processo de acabamento, confere OS e emite nota, solicita a coleta da RESCOM, imprime lista de Postagem e arquivos no FTP, carrega carro de RESCOM e baixa OS de expedição.
+        </div>
+      </li>
+    </ul>
+
+    <h2>
+      Todas essas etapas são importantes para que o processo de acabamento seja realizado com qualidade e eficiência.
+    </h2>
+  </div>
+
+  <script>
+    function toggleDescricao(index) {
+      const descricoes = document.querySelectorAll('.descricao');
+      descricoes.forEach((desc, i) => {
+        if (i === index) {
+          desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+        } else {
+          desc.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
+

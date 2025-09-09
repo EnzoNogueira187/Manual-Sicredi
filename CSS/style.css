@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+}
+
+#toggle-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #fffcfc;
+  color: #000000;
+  border: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar {
+  border-radius: 10px;
+  width: 200px;
+  height: 90vh;
+  background: #000000;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: width 0.3s;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.sidebar.closed {
+  width: 30px;
+}
+
+.sidebar .logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.menu {
+    margin-top: -100px;
+}
+.menu a, .submenu-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.menu a:hover, .submenu-btn:hover {
+  background: #f0f0f0;
+}
+
+.menu a.active {
+  background: #333;
+  color: #fff;
+}
+
+.sidebar.closed span {
+  display: none;
+}
+
+.submenu-items {
+  display: none;
+  padding-left: 30px;
+}
+
+.submenu-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;;
+}
+
+.footer a:hover {
+  color: #007bff;
+}
+
+.user {
+  margin-top: 1rem;
+}
+
+.user p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user small {
+  font-size: 12px;
+  color: #666;
+}
+
+body.dark .sidebar {
+  background: #1e1e2f;
+  color: #fff;
+}
+
+body.dark .menu a,
+body.dark .submenu-btn,
+body.dark .footer a {
+  color: #bbb;
+}
+
+body.dark .menu a.active {
+  background: #fff;
+  color: #000;
+}
+span {
+  margin-left: 50px;
+}
+.conteudo {
+    margin-top: 10px;
+    margin-left: 150px;
+}
+h1 {
+    margin-left: 170px;
+}
+.icon {
+    margin-left: -10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluxo de Processo</title>
+  <link rel="stylesheet" href="CSS/FluxoDeProcesso.css" />
+</head>
+<body>
+    <a href="!PagInicial.html">
+    <img src="https://logodownload.org/wp-content/uploads/2020/02/banestes-logo-1.png" alt="Logo BANESTES" class="img2"></a>
+  <div class="container">
+    <h1>Fluxo de Processo</h1>
+    <img src="Imagens/Fluxo_de_Processo.png" alt="Fluxo de Processo">
+    <h2>📥 1. Recepção</h2>
+    <ul>
+      <li><strong>STCP Server:</strong> Ponto inicial, onde o arquivo de entrada (com dados dos cheques) é recebido.</li>
+      <li><strong>Validação de Layout:</strong> O arquivo é validado para garantir que esteja no formato correto. Se houver erro, retorna para correção.</li>
+      <li><strong>Saída:</strong> Caso válido, segue para a etapa de aplicação.</li>
+    </ul>
+    <h2>💻 2. Aplicação BANESTES</h2>
+    <ul>
+      <li>Identificar Modelo: Define o tipo de cheque a ser impresso (modelo, layout, etc).</li>
+      <li>Ordena por Agência/Conta: Organiza os dados por conta e agência para facilitar a personalização e entrega.</li>
+      <li>Gera Linha de Processamento: Constrói a estrutura de trabalho.</li>
+      <li>Atualiza Portal: Sincroniza com o portal do banco.</li>
+      <li>Gera Spool / Material de Apoio: Cria os arquivos de impressão e relatórios auxiliares.</li>
+    </ul>
+    <h2>🧾 3. Personalização</h2>
+    <ul>
+      <li>Agrupa OS por modelo: Organiza ordens de serviço por tipo de cheque.</li>
+      <li>Solicita Formulário Base: Pede os formulários físicos.</li>
+      <li>Valida Alinhamento / Qualidade: Checagem visual e técnica da impressão.</li>
+      <li>Imprime: Produção dos cheques em si.</li>
+      <li>Baixar OS - Fim de Impressão: Finaliza a etapa e libera para acabamento.</li>
+    </ul>
+    <h2>🛠️ 4. Acabamento</h2>
+    <ul>
+      <li>Identificar Capa e Validar Qualidade: Garantia de integridade dos cheques.</li>
+      <li>Talonar OS: Agrupamento dos cheques em talões.</li>
+      <li>Recuperação de Caderno (se erro): Corrige falhas específicas.</li>
+      <li>Embalagem / Lombada / DWS: Embala e identifica os pacotes.</li>
+      <li>Manuseio / Triagem por Agência: Organiza os pacotes para entrega.</li>
+      <li>Auditoria: Verificação final para garantir que tudo esteja conforme.</li>
+      <li>Baixa da OS - Fim de Acabamento: Libera para expedição.</li>
+      <li>Gera etiqueta SEDEX: Prepara os pacotes para envio.</li>
+    </ul>
+    <h2>🚚 5. Expedição</h2>
+    <ul>
+      <li>Confere OS e Emite Nota Fiscal: Verificação final e emissão de nota.</li>
+      <li>Entra nota no sistema SEDEX: Integração com sistema de logística.</li>
+      <li>Impressão de Lista e Arquivos FTP: Geração de relatórios de postagem.</li>
+      <li>Solicita Coleta / Carrega Carro RESCOM: Prepara e entrega à transportadora.</li>
+      <li>Baixa OS Expedição: Finaliza o processo no sistema.</li>
+    </ul>
+  </div>
+</body>
+</html>

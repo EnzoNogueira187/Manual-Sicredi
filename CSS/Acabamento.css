@@ -1,0 +1,111 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      color: #333;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 700px;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #00796b;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 40px;
+    }
+
+    li {
+      font-size: 20px;
+      margin: 12px 0;
+      padding: 10px 15px;
+      background-color: #e0f2f1;
+      border-left: 6px solid #009688;
+      border-radius: 6px;
+      transition: 0.3s;
+}
+
+    li:hover {
+      background-color: #b2dfdb;
+    }
+
+    h2 {
+      font-size: 22px;
+      background-color: #f1f8e9;
+      border-left: 8px solid #8bc34a;
+      padding: 20px;
+      border-radius: 8px;
+      color: #33691e;
+    }
+
+    .img2 {
+        position: fixed;
+        display: flex;
+        width: 120px;
+        margin-top: -40px;
+        margin-left: -300px;
+    }
+
+    .etapa {
+      margin-bottom: 20px;
+      cursor: pointer;
+      padding: 12px;
+      background-color: #e0f2f1;
+      border-left: 6px solid #009688;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .etapa:hover {
+      background-color: #b2dfdb;
+    }
+
+    .descricao {
+      display: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      background-color: #f1f1f1;
+      border-left: 4px solid #00796b;
+      border-radius: 4px;
+      font-size: 16px;
+}
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 20px;
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-left: 6px solid #1a73e8;
+      border-radius: 6px;
+      color: #1a237e;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
